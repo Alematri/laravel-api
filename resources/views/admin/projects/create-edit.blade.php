@@ -23,7 +23,7 @@
     <div class="col-8">
         <form
           action="{{ $route }}"
-          method="project"
+          method="POST"
           enctype="multipart/form-data"
         >
             @csrf

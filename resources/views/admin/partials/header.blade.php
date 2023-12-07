@@ -8,7 +8,7 @@
                 <input name="toSearch" class="form-control mr-sm-2" type="search" placeholder="Cerca" aria-label="Search">
             </form>
             <a href="{{ route('profile.edit') }}" class="text-white text-decoration-none me-3">{{ Auth::user()->name }}</a>
-            <form action="{{ route('logout') }}" method="project" class="d-flex" role="search">
+            <form action="{{ route('logout') }}" method="POST" class="d-flex" role="search">
                 @csrf
                 <button class="btn btn-light " type="submit"><i class="fa-solid fa-right-from-bracket"></i></button>
               </form>

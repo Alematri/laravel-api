@@ -4,10 +4,10 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\project;
-use App\Models\type;
+use App\Models\Project;
+use App\Models\Type;
 
-class typeController extends Controller
+class TypeController extends Controller
 {
     /**
      * Display a listing of the resource.

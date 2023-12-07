@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\type;
+use App\Models\Type;
 use Illuminate\Support\Str;
 
 class typesTableSeeder extends Seeder

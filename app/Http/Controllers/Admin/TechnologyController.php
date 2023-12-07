@@ -4,11 +4,11 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\technology;
+use App\Models\Technology;
 use Illuminate\Support\Str;
 use App\Functions\Helper;
 
-class technologyController extends Controller
+class TechnologyController extends Controller
 {
     /**
      * Display a listing of the resource.

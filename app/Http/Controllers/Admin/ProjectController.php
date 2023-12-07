@@ -4,15 +4,15 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\project;
-use App\Models\technology;
-use App\Models\type;
-use App\Http\Requests\projectRequest;
+use App\Models\Project;
+use App\Models\Technology;
+use App\Models\Type;
+use App\Http\Requests\PostRequest;
 use App\Functions\Helper;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Database\Query\Builder;
 
-class projectController extends Controller
+class ProjectController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -88,7 +88,7 @@ class projectController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(projectRequest $request)
+    public function store(PostRequest $request)
     {
         $form_data = $request->all();
         $form_data['slug'] = Helper::generateSlug($form_data['title'], project::class);
@@ -157,7 +157,7 @@ class projectController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(projectRequest $request, project $project)
+    public function update(PostRequest $request, project $project)
     {
         $form_data = $request->all();
         if($form_data['title']!= $project->title){

@@ -28,7 +28,7 @@
             @endif
 
 
-            <form action="{{ route('admin.technologies.store') }}" method="project">
+            <form action="{{ route('admin.technologies.store') }}" method="POST">
                 @csrf
                 <div class="input-group mb-3">
                     <input type="text" class="form-control" placeholder="Nuova categoria" name="name">
@@ -49,7 +49,7 @@
                         <td>
                             <form
                               action="{{ route('admin.technologies.update', $technology) }}"
-                              method="project"
+                              method="POST"
                               id="form-edit-{{ $technology->id }}"
                             >
                                 @csrf

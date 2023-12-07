@@ -1,7 +1,7 @@
 <form
     class="d-inline-block"
     action="{{ $route }}"
-    method="project"
+    method="POST"
     onsubmit="return confirm('{{ $message }}')"
 >
     @csrf
