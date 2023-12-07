@@ -67,7 +67,7 @@ class projectController extends Controller
     public function create()
     {
         $title = 'Inserimento nuovo project';
-        $method = 'project';
+        $method = 'POST';
         $route = route('admin.projects.store');
         $project = null;
         $technologies = technology::all();
